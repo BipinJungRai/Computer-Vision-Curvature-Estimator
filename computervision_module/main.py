@@ -125,6 +125,20 @@ def main():
     # Step 9: Visualize the results (original image, grayscale, edges, and curvature)
     visualize_results(cropped_image, gray, edges, points, curvatures_meters)
 
+    # Add a message to guide the user
+    print("\n" + "="*50)
+    print("Visualization Complete:")
+    print("- Close the OpenCV windows by pressing 'q'.")
+    print("="*50)
+
+    # Wait for the user to press 'q' to exit
+    while True:
+        key = cv2.waitKey(0) & 0xFF
+        if key == ord('q'):  # Check if 'q' is pressed
+            print("Exiting program...")
+            cv2.destroyAllWindows()  # Close all OpenCV windows
+            break
+
 if __name__ == "__main__":
     """
     Entry point of the script.
