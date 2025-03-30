@@ -72,7 +72,7 @@ This project is a Python-based tool for analyzing the curvature of contours in i
 If your input image is named `banana.jpg`, place it in the `test_image` folder and set `image_path` in `main.py` as follows:
 
 ```python
-image_path = 'test_image/banana.jpg'
+image_path = 'test_image/plate.png'
 ```
 
 Then, run the program and follow the instructions to analyze the curvature.
